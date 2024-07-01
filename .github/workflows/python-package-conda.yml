@@ -1,0 +1,14 @@
+name: Python Package using Conda
+
+
+on: [push]
+
+jobs:
+  build-windows:
+    runs-on: Windows
+    strategy: 
+      max-parallel: 5
+
+    steps: 
+      - name: set up conda env
+      
